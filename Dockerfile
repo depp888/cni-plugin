@@ -1,5 +1,6 @@
 ARG GOLANG_VERSION
-FROM library/golang:${GOLANG_VERSION}-alpine AS build
+#FROM library/golang:${GOLANG_VERSION}-alpine AS build
+FROM library/golang:1.21.9-alpine AS build
 ARG TAG
 RUN set -x \
     && apk --no-cache add \
